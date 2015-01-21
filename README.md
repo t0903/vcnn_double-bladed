@@ -2,7 +2,8 @@
 Vectorized implementation of convolutional neural networks (CNN) in <b>Matlab</b> for both visual recognition and image processing. It's a unified framework for both high level and low level computer vision tasks.
 
 ## How to use it
-You can directly try the demos without reading any of the document. Just launch [applications/MNIST/mnist_train_demo.m](https://github.com/vcnn/vcnn_double-bladed/blob/master/applications/MNIST/mnist_train_demo.m) and you will get sensible results within seconds.<br>
+You can directly try the demos without reading any of the document. Just launch [applications/MNIST/mnist_train_demo.m](https://github.com/vcnn/vcnn_double-bladed/blob/master/applications/MNIST/mnist_train_demo.m) for training. You will get sensible results within seconds.<br>
+You can also launch [applications/MNIST/mnist_test_demo.m](https://github.com/vcnn/vcnn_double-bladed/blob/master/applications/MNIST/mnist_test_demo.m) to use a pre-trained model.<br>
 Please visit the [project website](http://vcnn.deeplearning.cc) for all documents, examples and videos.
 
 ## Hardware/software requirements
