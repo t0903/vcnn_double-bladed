@@ -1,8 +1,8 @@
 # VCNN - Double-Bladed Sword
-Vectorized implementation of convolutional neural networks (CNN) in Matlab for both visual recognition and image processing
+Vectorized implementation of convolutional neural networks (CNN) in <b>Matlab</b> for both visual recognition and image processing
 
 ## How to use it
-Please visit the [project website](http://vcnn.deeplearning.cc) for documents, examples and videos.
+Please visit the [project website](http://vcnn.deeplearning.cc) for all documents, examples and videos.
 
 ## Videos
 TBA
