@@ -2,6 +2,7 @@
 Vectorized implementation of convolutional neural networks (CNN) in <b>Matlab</b> for both visual recognition and image processing
 
 ## How to use it
+If can directly try the demos without reading any of the document. Just launch ...
 Please visit the [project website](http://vcnn.deeplearning.cc) for all documents, examples and videos.
 
 ## Videos
