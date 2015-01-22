@@ -24,7 +24,7 @@ function mnist_configure()
     config.learning_rate = 0.01;
     config.weight_range = 2;
     config.decay = 5e-7 / 10;
-    config.normailize_init_weights = 1;
+    config.normalize_init_weights = 1;
     config.dropout_full_layer = 1;
     config.optimization = 'adagrad';
 end
