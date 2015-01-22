@@ -62,7 +62,7 @@ function init(flag)
                                              config.conv_hidden_size(conv_layer_c)];
             config.weights{idx} = config.NEW_MEM(randn(config.feature_map_sizes{idx}(3), ...
                                           config.kernel_size(conv_layer_c, 1)*config.kernel_size(conv_layer_c, 2)*config.chs)*r);
-            if config.normailize_init_weights
+            if config.normalize_init_weights
                 config.weights{idx} = config.weights{idx} / sqrt(config.kernel_size(conv_layer_c, 1) * config.kernel_size(conv_layer_c, 2) * config.conv_hidden_size(conv_layer_c));
             end
         elseif strcmp(config.forward_pass_scheme{idx}, 'conv_v')
@@ -72,14 +72,14 @@ function init(flag)
                                              config.conv_hidden_size(conv_layer_c)];
             config.weights{idx} = config.NEW_MEM(randn(config.feature_map_sizes{idx}(3), ...
                                           config.kernel_size(conv_layer_c, 1)*config.kernel_size(conv_layer_c, 2)*config.feature_map_sizes{idx-1}(3))*r);
-            if config.normailize_init_weights
+            if config.normalize_init_weights
                 config.weights{idx} = config.weights{idx} / sqrt(config.kernel_size(conv_layer_c, 1) * config.kernel_size(conv_layer_c, 2) * config.conv_hidden_size(conv_layer_c));
             end
         elseif strcmp(config.forward_pass_scheme{idx}, 'conv_f')
             conv_layer_c = conv_layer_c + 1;
             if idx == layer_num
                 config.weights{idx} = config.NEW_MEM(randn(config.kernel_size(conv_layer_c, 1)*config.kernel_size(conv_layer_c, 2)*config.output_size(3), config.conv_hidden_size(conv_layer_c-1))*r);
-                if config.normailize_init_weights
+                if config.normalize_init_weights
                     config.weights{idx} = config.weights{idx} / sqrt(config.kernel_size(conv_layer_c, 1) * config.kernel_size(conv_layer_c, 2) * size(config.weights{idx}, 1));
                 end
                 config.GEN_OUTPUT = @gen_output_from_conv_f;
@@ -95,14 +95,14 @@ function init(flag)
             full_layer_c = full_layer_c + 1;            
             if idx == layer_num
                 config.weights{idx} = config.NEW_MEM(randn(config.output_size(3), config.feature_map_sizes{idx-1}(3)) * r);
-                if config.normailize_init_weights
+                if config.normalize_init_weights
                     config.weights{idx} = config.weights{idx} / sqrt(config.output_size(3));
                 end
             else
                 config.feature_map_sizes{idx} = [1 1 config.full_hidden_size(full_layer_c)];
                 config.weights{idx} = config.NEW_MEM(randn(config.feature_map_sizes{idx}(3), ...
                     config.feature_map_sizes{idx-1}(1)*config.feature_map_sizes{idx-1}(2)*config.feature_map_sizes{idx-1}(3)) * r);
-                if config.normailize_init_weights
+                if config.normalize_init_weights
                     config.weights{idx} = config.weights{idx} / sqrt(config.feature_map_sizes{idx}(3));
                 end
             end            
