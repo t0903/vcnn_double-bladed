@@ -38,7 +38,9 @@ elseif strcmp(verify_mode, 'speed')
     for m = 1:loop
         op_train_pipe(I, y);
     end
-    toc/loop/config.batch_size
+    elapse = toc/loop/config.batch_size;
+    num = 1 / elapse;
+    fprintf('Process %f samples per second.\n', num);
 end
 
 
