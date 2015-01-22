@@ -24,7 +24,7 @@ function denoise_configure()
     config.learning_rate = 0.01;
     config.weight_range = 0.01;
     config.decay = 5e-7 / 10;
-    config.normailize_init_weights = 0;
+    config.normalize_init_weights = 0;
     config.dropout_full_layer = 0;
     config.optimization = 'adagrad';
 end
