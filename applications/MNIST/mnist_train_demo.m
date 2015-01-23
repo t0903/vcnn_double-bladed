@@ -83,13 +83,14 @@ for pass = 1:5
             out = train_labels(:,(i-1)*config.batch_size+1:i*config.batch_size);
             % operate the training pipeline
             op_train_pipe(in, out);
+            % update the weights
+            config.UPDATE_WEIGHTS();
+            
             if(cost_avg == 0)
                 cost_avg = config.cost;
             else
                 cost_avg = (cost_avg + config.cost) / 2;
             end
-
-            config.UPDATE_WEIGHTS();     
 
             % display point
             if(mod(points_seen, display_points) == 0)
