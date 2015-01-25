@@ -17,7 +17,7 @@ function prepare_net(input_x, input_y, w_path)
     config.batch_size = 1;
     size_differ = [config.input_size(1)-config.output_size(1) config.input_size(2)-config.output_size(2)];
     config.input_size = [p_size p_size];
-    config.output_size = [p_size-size_differ(1) p_size-size_differ(2) 3];
+    config.output_size = [p_size-size_differ(1) p_size-size_differ(2) config.chs];
     config.size_differ = size_differ;
     init(1);
     load(w_path);
