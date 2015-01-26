@@ -45,7 +45,7 @@ test_labels = config.NEW_MEM(testLabels);
 
 fprintf('Testing...\n');
 fake_output_for_test = config.NEW_MEM(zeros(config.output_size(3), config.batch_size));
-outputs = zeros(10, size(test_imgs, 3));
+outputs = zeros(10, size(test_imgs, 4));
 for m = 1:size(test_imgs, 4) / config.batch_size
     val_in = test_imgs(:,:,:,(m-1)*config.batch_size+1:m*config.batch_size);
     op_test_pipe(val_in, fake_output_for_test);
