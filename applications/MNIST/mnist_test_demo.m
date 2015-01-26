@@ -21,7 +21,7 @@ global config mem;
 mnist_configure();
 config.batch_size = 200;
 init(1);
-load('w.mat');
+load('w_mnist.mat');
 config.weights = model.weights;
 
 % load test images and labels
