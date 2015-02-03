@@ -30,6 +30,8 @@ testLabels = loadMNISTLabels('t10k-labels.idx1-ubyte');
 idx = find(testLabels==0);
 testLabels(idx) = 10;
 
+display_samples(testImages(:,1:100)); % Show the first 100 samples
+
 % pad test set
 testImagesSquare = reshape(testImages, 28, 28, size(testImages, 2));
 testImages_padded = zeros(32, 32, size(testImagesSquare, 3));
