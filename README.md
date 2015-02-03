@@ -13,7 +13,7 @@ Please visit the [project website](http://vcnn.deeplearning.cc) for all document
 2. A Nvidia GPU with 2GB GPU memory or above (if you would like to run on GPU). You can also train a new model without a GPU by specifying "config.compute_device = 'CPU';" in the config file (e.g. [mnist_configure.m](https://github.com/vcnn/vcnn_double-bladed/blob/master/applications/MNIST/mnist_configure.m)). <br>
 
 ## Videos
-TBA
+1. [Introduction](https://www.youtube.com/watch?v=aYhl_k51Tks)<br>
 
 ## Contributors
 [Jimmy SJ. Ren](http://www.jimmyren.com) (jimmy.sj.ren@gmail.com)<br>
