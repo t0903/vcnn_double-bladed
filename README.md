@@ -9,7 +9,7 @@ You can <b>directly</b> try the demos without referring to any materials in the 
 Please visit the [project website](http://vcnn.deeplearning.cc) for all documents, examples and videos.
 
 ## Hardware/software requirements
-1. Matlab 2014b or later (currently tested in Windows 7)<br>
+1. Matlab 2014b or later, CUDA 6.0 or later (currently tested in Windows 7)<br>
 2. A Nvidia GPU with 2GB GPU memory or above (if you would like to run on GPU). You can also train a new model without a GPU by specifying "config.compute_device = 'CPU';" in the config file (e.g. [mnist_configure.m](https://github.com/vcnn/vcnn_double-bladed/blob/master/applications/MNIST/mnist_configure.m)). <br>
 
 ## Videos
