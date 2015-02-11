@@ -15,6 +15,7 @@ Please visit the [project website](http://vcnn.deeplearning.cc) for all document
 ## Videos
 1. [Introduction](https://www.youtube.com/watch?v=aYhl_k51Tks)<br>
 2. [MNIST example (demonstrate the speed & accuracy)](https://www.youtube.com/watch?v=6mMa59niBxo)<br>
+3. [Image denoising example](https://www.youtube.com/watch?v=3Otm4sjhelg)<br>
 
 ## Contributors
 [Jimmy SJ. Ren](http://www.jimmyren.com) (jimmy.sj.ren@gmail.com)<br>
