@@ -11,6 +11,7 @@ addpath cuda/
 addpath mem/
 addpath layers/
 addpath layers_adapters/
+addpath optimization/
 addpath pipeline/
 addpath data/
 
