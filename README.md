@@ -19,7 +19,7 @@ Please visit the [project website](http://vcnn.deeplearning.cc) for all document
 
 ## Contributors
 [Jimmy SJ. Ren](http://www.jimmyren.com) (jimmy.sj.ren@gmail.com)<br>
-[Li Xu](http://www.lxu.me) (xulihk@lenovo.com)
+[Li Xu](http://www.lxu.me) (nathan.xuli@gmail.com)
 
 ## Citation
 Cite our papers if you find this software useful.<br>
